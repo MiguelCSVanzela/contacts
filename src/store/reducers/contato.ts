@@ -11,7 +11,7 @@ const initialState: ContatoState = {
     {
       nome: 'Miguel CS Vanzela',
       email: 'miguelclaudio@gmail.com',
-      telefone: 988544045,
+      telefone: '(43)98854-4045',
       id: 1
     }
   ]

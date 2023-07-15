@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { FormEvent, useState, ChangeEvent } from 'react'
+import { IMaskInput } from 'react-imask'
 
 import {
   FormContainer,
@@ -16,9 +17,8 @@ const Formulario = () => {
 
   const [nome, setNome] = useState('')
   const [email, setEmail] = useState('')
-  const [numero, setNumero] = useState('')
+  const [telefone, setTelefone] = useState('')
 
-  const telefone = Number.parseInt(numero)
   const cadastrarContato = (evento: FormEvent) => {
     evento.preventDefault()
     dispatch(
@@ -56,11 +56,12 @@ const Formulario = () => {
       </CampoCadastro>
       <CampoCadastro>
         <label htmlFor="telefone">Telefone:</label>
-        <input
+        <IMaskInput
+          mask="(00)00000-0000"
           type="tel"
           id="telefone"
           onChange={({ target }: ChangeEvent<HTMLInputElement>) =>
-            setNumero(target.value)
+            setTelefone(target.value)
           }
           required
         />

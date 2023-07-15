@@ -1,5 +1,6 @@
 import { useState, useEffect, ChangeEvent } from 'react'
 import { useDispatch } from 'react-redux'
+import { IMaskInput } from 'react-imask'
 
 import { excluir, alterar } from '../../store/reducers/contato'
 import ContatoType from '../../models/Contato'
@@ -20,11 +21,10 @@ const Contato = ({ nome, email, telefone, id }: Props) => {
   const [editando, setEditando] = useState(false)
   const [nomeLocal, setNomeLocal] = useState('')
   const [emailLocal, setEmailLocal] = useState('')
-  const [telefoneLocal, setTelefoneLocal] = useState(0)
+  const [telefoneLocal, setTelefoneLocal] = useState('')
 
   useEffect(() => {
-    const qtaNumeros = telefone.toString()
-    if (nome.length > 0 && email.length > 0 && qtaNumeros.length >= 0) {
+    if (nome.length > 0 && email.length > 0 && telefone.length > 0) {
       setNomeLocal(nome)
       setEmailLocal(email)
       setTelefoneLocal(telefone)
@@ -67,7 +67,7 @@ const Contato = ({ nome, email, telefone, id }: Props) => {
         </label>
         <Campo
           disabled={!editando}
-          type="text"
+          type="email"
           value={emailLocal}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setEmailLocal(e.target.value)
@@ -81,10 +81,12 @@ const Contato = ({ nome, email, telefone, id }: Props) => {
         </label>
         <Campo
           disabled={!editando}
+          as={IMaskInput}
           type="text"
+          mask="(00)00000-0000"
           value={telefoneLocal}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
-            setTelefoneLocal(parseInt(e.target.value))
+            setTelefoneLocal(e.target.value)
           }
           id="telefone"
         />

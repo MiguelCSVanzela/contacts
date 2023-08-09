@@ -20,11 +20,10 @@ export const Botao = styled.button`
   padding: 8px 16px;
   color: #fff;
   font-size: 24px;
-  border-radius: 8px;
   margin: auto 8px;
   border: none;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 1.5px solid transparent;
   transition: all 0.3s ease;
 
   &:hover {

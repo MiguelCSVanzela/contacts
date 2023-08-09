@@ -15,7 +15,7 @@ export const Titulo = styled.h1`
   font-size: 50px;
   margin: 20px auto;
   text-transform: uppercase;
-  color: ${variaveis.azulEscuro};
+  color: ${variaveis.preto};
 `
 
 export const BotaoHome = styled(Botao)`

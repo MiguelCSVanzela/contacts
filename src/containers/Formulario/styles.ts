@@ -20,13 +20,13 @@ export const CampoCadastro = styled.div`
     outline: none;
     border: none;
     border: 1px solid transparent;
-    border-bottom-color: ${variaveis.azulEscuro};
+    border-bottom-color: ${variaveis.preto};
     transition: all 2s ease;
     text-align: center;
   }
 
   input:focus {
-    border-color: ${variaveis.azulEscuro};
+    border-color: ${variaveis.preto};
     transition: all 0.4s ease;
   }
 
@@ -35,19 +35,11 @@ export const CampoCadastro = styled.div`
     font-size: 24px;
     text-transform: uppercase;
   }
-
-  img {
-    margin: 20px auto;
-    display: block;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-  }
 `
 export const BotaoCadastrar = styled(Botao)`
   background-color: ${variaveis.verdeClaro};
 `
 
 export const BotaoLimpar = styled(Botao)`
-  background-color: ${variaveis.azulEscuro};
+  background-color: ${variaveis.preto};
 `

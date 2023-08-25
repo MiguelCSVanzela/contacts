@@ -4,24 +4,22 @@ import variaveis from '../../styles/variaveis'
 
 export const HeaderContainer = styled.header`
   padding: 16px;
-  background-color: #dcdde1;
+  background-color: ${variaveis.platium};
   text-align: center;
-  font-family: Roboto, sans-serif;
 `
 
 export const Titulo = styled.h1`
-  font-family: 'Cinzel', serif;
   font-weight: bold;
   font-size: 50px;
   margin: 20px auto;
   text-transform: uppercase;
-  color: ${variaveis.azulEscuro};
+  color: ${variaveis.sky};
 `
 
 export const BotaoHome = styled(Botao)`
-  background-color: ${variaveis.verde};
+  background-color: ${variaveis.forest};
 `
 
 export const BotaoCadastro = styled(Botao)`
-  background-color: #c1c9d0;
+  background-color: ${variaveis.platium};
 `

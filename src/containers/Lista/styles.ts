@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import variaveis from '../../styles/variaveis'
 export const ListaContainer = styled.li`
   max-width: 1024px;
   width: 100%;
@@ -10,6 +10,7 @@ export const ListaContainer = styled.li`
   border: 0.1px solid transparent;
   transition: all 0.3s ease;
   text-align: center;
+  background-color: ${variaveis.platium};
 
   &:hover {
     border: 0.1px solid black;

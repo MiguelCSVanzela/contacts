@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components'
+import variaveis from './variaveis'
 
 const EstiloGlobal = createGlobalStyle`
 *{
@@ -6,7 +7,10 @@ const EstiloGlobal = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   list-style: none;
-  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background-color: ${variaveis.dark}
 }
 `
 
@@ -16,7 +20,6 @@ export const Container = styled.div`
   margin: 0 auto;
 `
 export const Botao = styled.button`
-  font-family: 'Cinzel', serif;
   padding: 8px 16px;
   color: #fff;
   font-size: 24px;
@@ -28,7 +31,7 @@ export const Botao = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: black;
+    border-color: ${variaveis.dark};
     color: black;
   }
 `

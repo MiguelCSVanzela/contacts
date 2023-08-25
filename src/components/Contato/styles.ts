@@ -35,18 +35,18 @@ export const Campo = styled.input`
 `
 
 export const BotaoEditar = styled(Botao)`
-  background-color: ${variaveis.verde};
+  background-color: ${variaveis.forest};
   margin-left: 0;
 `
 export const BotaoExcluir = styled(Botao)`
-  background-color: ${variaveis.vermelho};
+  background-color: ${variaveis.rose};
 `
 
 export const BotaoSalvar = styled(Botao)`
-  background-color: ${variaveis.verdeClaro};
+  background-color: ${variaveis.forest};
   margin-left: 0;
 `
 
 export const BotaoCancelar = styled(Botao)`
-  background-color: ${variaveis.vermelhoClaro};
+  background-color: ${variaveis.rose};
 `

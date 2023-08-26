@@ -7,10 +7,12 @@ const EstiloGlobal = createGlobalStyle`
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  font-family: sans-serif;
 }
 
 body{
-  background-color: ${variaveis.dark}
+  background-color: ${variaveis.dark};
+  overflow-y: hidden;
 }
 `
 

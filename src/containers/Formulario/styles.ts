@@ -22,8 +22,7 @@ export const CampoCadastro = styled.div`
     height: 32px;
     outline: none;
     border: none;
-    border: 2px solid transparent;
-    outline: 2px solid transparent;
+    border: 1px solid transparent;
     border-bottom-color: ${variaveis.sky};
     transition: all 2s ease;
     text-align: center;
@@ -32,7 +31,6 @@ export const CampoCadastro = styled.div`
 
   input:focus {
     border-color: ${variaveis.sky};
-    outline-color: ${variaveis.sky};
     transition: all 0.4s ease;
   }
 
@@ -40,14 +38,6 @@ export const CampoCadastro = styled.div`
     display: block;
     font-size: 24px;
     text-transform: uppercase;
-  }
-
-  img {
-    margin: 20px auto;
-    display: block;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
   }
 `
 export const BotaoCadastrar = styled(Botao)`

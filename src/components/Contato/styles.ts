@@ -10,14 +10,13 @@ export const ContainerCampo = styled.div`
   img {
     height: 32px;
     margin-right: 8px;
-    cursor: pointer;
+    cursor: crosshair;
   }
 `
 
 export const Campo = styled.input`
   text-align: center;
   border: none;
-  border-radius: 8px;
   border: 0.3px solid transparent;
   transition: all 0.3s ease;
   background-color: transparent;

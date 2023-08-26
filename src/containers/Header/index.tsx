@@ -11,14 +11,16 @@ const Header = ({ mostrarCadastro }: Props) => {
     <HeaderContainer>
       {mostrarCadastro ? (
         <>
-          <Titulo>Contacts - Home</Titulo>
+          <Titulo>
+            Contatos <br /> Home
+          </Titulo>
           <BotaoCadastro onClick={() => navigate('/cadastro')} type="button">
             Cadastro
           </BotaoCadastro>
         </>
       ) : (
         <>
-          <Titulo>Contacts - Cadastro</Titulo>
+          <Titulo>Cadastro</Titulo>
           <BotaoHome onClick={() => navigate('/')} type="button">
             Home
           </BotaoHome>
